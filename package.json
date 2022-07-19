@@ -1,6 +1,6 @@
 {
   "name": "tsup-package",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Update package.json for tsup and React",
   "main": "index.js",
   "repository": {
