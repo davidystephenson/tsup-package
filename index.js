@@ -3,7 +3,7 @@ const packageJson = require('./package.json')
 const fs = require('fs')
 
 function move ({ name, to }) {
-  if (packageJson.dependencies[name] != null) {
+  if (packageJson.dependencies?.[name] != null) {
     const { [name]: value, ...without } = packageJson.dependencies
 
     packageJson.dependencies = without
