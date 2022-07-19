@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 
 if (process.argv.length > 2) {
-  const filepath = path.join('.', process.argv[2])
+  const filepath = path.join(__dirname, process.argv[2])
   const packageJson = require(filepath)
 
   function move ({ name, to }) {
