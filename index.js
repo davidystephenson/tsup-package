@@ -33,8 +33,8 @@ if (process.argv.length > 2) {
     packageJson.files = ['dist']
   }
 
-  packageJson.main = 'dist/App.js'
-  packageJson.types = 'dist/App.d.ts'
+  packageJson.main = 'dist/tsup.js'
+  packageJson.types = 'dist/tsup.d.ts'
 
   delete packageJson.private
 
