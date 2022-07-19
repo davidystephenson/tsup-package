@@ -1,0 +1,19 @@
+{
+  "name": "tsup-package",
+  "version": "0.0.1",
+  "description": "Update package.json for tsup and React",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidystephenson/tsup-package.git"
+  },
+  "author": "David Y. Stephenson",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/davidystephenson/tsup-package/issues"
+  },
+  "homepage": "https://github.com/davidystephenson/tsup-package#readme",
+  "bin": {
+    "tsup-package": "index.js"
+  }
+}
