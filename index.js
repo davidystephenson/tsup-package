@@ -3,8 +3,9 @@ const fs = require('fs')
 const path = require('path')
 
 if (process.argv.length > 2) {
-  const filepath = path.join(__dirname, process.argv[2])
-  const packageJson = require(filepath)
+  const joined = path.join('.', process.argv[2])
+  const resolved = path.resolve(joined)
+  const packageJson = require(resolved)
 
   function move ({ name, to }) {
     if (packageJson.dependencies?.[name] != null) {
