@@ -2,10 +2,7 @@
 const packageJson = require('./package.json')
 const fs = require('fs')
 
-function move ({ name, to }: {
-  name: string
-  to: string
-}) {
+function move ({ name, to }) {
   if (packageJson.dependencies[name] != null) {
     const { [name]: value, ...without } = packageJson.dependencies
 
@@ -34,7 +31,7 @@ if (packageJson.files) {
 packageJson.main = 'dist/App.js'
 packageJson.types = 'dist/App.d.ts'
 
-const { private, ...without } = packageJson
+delete packageJson.private
 
-const json = JSON.stringify(without, null, 2)
+const json = JSON.stringify(packageJson, null, 2)
 fs.writeFileSync('./package.json', json)

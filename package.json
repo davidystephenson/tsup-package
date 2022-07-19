@@ -15,5 +15,8 @@
   "homepage": "https://github.com/davidystephenson/tsup-package#readme",
   "bin": {
     "tsup-package": "index.js"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
   }
 }
